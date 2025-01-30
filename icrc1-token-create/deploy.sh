@@ -1,10 +1,9 @@
 
-##No funciona la visualizacion del logo en la wallet
 dfx deploy icrc1_ledger_canister --argument '( variant {
     Init = record {
       decimals = opt (8 : nat8);
       token_symbol = "PENG";
-      transfer_fee = 10_000 : nat;
+      transfer_fee = 1_000 : nat;
       metadata = vec {
         record { 
           "icrc1:logo";
